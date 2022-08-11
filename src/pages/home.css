@@ -1,6 +1,5 @@
 .banner {
-  /* background-image: "..assets/img/showcase.jpg"; */
-  background-color: red;
+  background-image: url(../assets/showcase.jpg);
   height: 400px;
   background-position: center center;
   background-size: cover;
@@ -51,6 +50,7 @@ button {
 }
 .box > * {
   padding: 1rem 0;
+  cursor: pointer;
 }
 img {
   width: 6rem;

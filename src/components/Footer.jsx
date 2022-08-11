@@ -1,10 +1,11 @@
+import cw from "../assets/cw.jpeg";
 const Footer = () => {
   return (
     <div>
       <footer>
         <div className="foot">
           <p>Clarusway Web Design, Copyright © 2020</p>
-          <img src="./images/clarusway_logo.png" alt="clarusway_logo" />
+          <img src={cw} alt="clarusway_logo" height={60} />
         </div>
       </footer>
     </div>

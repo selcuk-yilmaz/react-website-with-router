@@ -21,7 +21,7 @@ const Home = () => {
           </p>
         </section>
         <Subscribe />
-        //!ikinci yol olarak componentsiz yapılabilir.
+        {/* ikinci yol olarak componentsiz yapılabilir.  */}
         {/* <section className="subscribe">
           <div id="newsletter">
             <p>Subscribe To Our Newsletter</p>
