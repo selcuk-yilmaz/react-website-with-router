@@ -1,8 +1,14 @@
-import html from "../assets/img/logo_html.png";
-import css from "../assets/img/logo_css.png";
-import brush from "../assets/img/logo_brush.png";
+import "./Home.css";
+import html from "../assets/logo_html.png";
+import css from "../assets/logo_css.png";
+import brush from "../assets/logo_brush.png";
+import Subscribe from "../components/Subscribe";
+import { useNavigate } from "react-router-dom";
+import { info } from "../utils/data";
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <main>
@@ -14,7 +20,9 @@ const Home = () => {
             interdum condimentum.
           </p>
         </section>
-        <section className="subscribe">
+        <Subscribe />
+        //!ikinci yol olarak componentsiz yapılabilir.
+        {/* <section className="subscribe">
           <div id="newsletter">
             <p>Subscribe To Our Newsletter</p>
           </div>
@@ -31,9 +39,12 @@ const Home = () => {
               </button>
             </form>
           </div>
-        </section>
+        </section> */}
         <section className="logo">
-          <div className="box">
+          <div
+            className="box"
+            onClick={() => navigate("/html", { state: info[0].htmlInfo })}
+          >
             <img src={html} alt="html_logo" />
             <h3>HTML5 Markup</h3>
             <p>
@@ -41,7 +52,10 @@ const Home = () => {
               mi augue, viverra sit amet ultricies
             </p>
           </div>
-          <div className="box">
+          <div
+            className="box"
+            onClick={() => navigate("/css", { state: info[1].cssInfo })}
+          >
             <img src={css} alt="css_logo" />
             <h3>CSS3 Styling</h3>
             <p>
@@ -49,7 +63,10 @@ const Home = () => {
               mi augue, viverra sit amet ultricies
             </p>
           </div>
-          <div className="box">
+          <div
+            className="box"
+            onClick={() => navigate("/logo", { state: info[2].logoInfo })}
+          >
             <img src={brush} alt="graphic_logo" />
             <h3>Graphic Design</h3>
             <p>

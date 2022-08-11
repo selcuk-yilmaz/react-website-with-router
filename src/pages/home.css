@@ -1,5 +1,6 @@
 .banner {
-  background-image: url(../images/showcase.jpg);
+  /* background-image: "..assets/img/showcase.jpg"; */
+  background-color: red;
   height: 400px;
   background-position: center center;
   background-size: cover;
