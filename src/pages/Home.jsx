@@ -1,4 +1,4 @@
-import "./Home.css";
+import "./home.css";
 import html from "../assets/logo_html.png";
 import css from "../assets/logo_css.png";
 import brush from "../assets/logo_brush.png";
