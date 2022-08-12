@@ -4,8 +4,8 @@ const Footer = () => {
     <div>
       <footer>
         <div className="foot">
+          <img src={cw} alt="clarusway_logo" />
           <p>Clarusway Web Design, Copyright © 2020</p>
-          <img src={cw} alt="clarusway_logo" height={60} />
         </div>
       </footer>
     </div>
